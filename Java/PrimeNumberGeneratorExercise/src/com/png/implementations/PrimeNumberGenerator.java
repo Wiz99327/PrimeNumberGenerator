@@ -59,7 +59,7 @@ public final class PrimeNumberGenerator implements IPrimeNumberGenerator {
 		}
 		
         // Iterate through the prime numbers we've already preprocessed
-        // and determine if any of them divide evenly (remainder/modulus is 0).
+        // and determine if any of them divide evenly (remainder is 0).
         // The first number that does this confirms the passed in value is
         // composite, so we'll return from this method here
 		for (int i = 0; i < preprocessedPrimes.size(); i++) {
