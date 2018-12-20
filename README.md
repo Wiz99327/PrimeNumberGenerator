@@ -14,7 +14,7 @@ and the expected result is:
 `Prime numbers in specified range [1, 10] (in ascending order):`  
 `2 3 5 7`
 
-For the Java implementation, after cd-ing into the bin directory (and assuming the same range of `[1, 10]`), run the following command:
+For the Java implementation, after cd-ing into the bin directory (and assuming the same range of `[1, 10]`), run the following command:  
 `java com.png.PrimeNumberGeneratorExec 1 10`
 
 NOTE: The parameters may be specified in any order, so `[1, 10]` and `[10, 1]` are equivalent and thus, will yield the same result.
