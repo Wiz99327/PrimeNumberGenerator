@@ -16,7 +16,7 @@ class mainProgramTests {
 		PrintStream ps = new PrintStream(os);
 		System.setOut(ps);
 		
-		Program.main(new String[] { "1", "10" });
+		PrimeNumberGeneratorExec.main(new String[] { "1", "10" });
 		
 		assertEquals("List of prime numbers in specified range [1, 10]:\r\n2 3 5 7 ", os.toString());
 	}
@@ -27,7 +27,7 @@ class mainProgramTests {
 		PrintStream ps = new PrintStream(os);
 		System.setOut(ps);
 		
-		Program.main(new String[] { "10", "1" });
+		PrimeNumberGeneratorExec.main(new String[] { "10", "1" });
 		
 		assertEquals("List of prime numbers in specified range [10, 1]:\r\n2 3 5 7 ", os.toString());
 	}
@@ -38,7 +38,7 @@ class mainProgramTests {
 		PrintStream ps = new PrintStream(os);
 		System.setOut(ps);
 		
-		Program.main(new String[] { "8", "10" });
+		PrimeNumberGeneratorExec.main(new String[] { "8", "10" });
 		
 		assertEquals("No prime numbers exist in specified range [8, 10]\r\n", os.toString());
 	}
@@ -49,7 +49,7 @@ class mainProgramTests {
 		PrintStream ps = new PrintStream(os);
 		System.setOut(ps);
 		
-		Program.main(new String[] { "10", "8" });
+		PrimeNumberGeneratorExec.main(new String[] { "10", "8" });
 		
 		assertEquals("No prime numbers exist in specified range [10, 8]\r\n", os.toString());
 	}
@@ -60,7 +60,7 @@ class mainProgramTests {
 		PrintStream ps = new PrintStream(os);
 		System.setOut(ps);
 		
-		Program.main(new String[] { "-1", "-5" });
+		PrimeNumberGeneratorExec.main(new String[] { "-1", "-5" });
 		
 		assertEquals("No prime numbers exist in specified range [-1, -5]\r\n", os.toString());
 	}
@@ -71,7 +71,7 @@ class mainProgramTests {
 		PrintStream ps = new PrintStream(os);
 		System.setOut(ps);
 		
-		Program.main(new String[] { "abc", "5" });
+		PrimeNumberGeneratorExec.main(new String[] { "abc", "5" });
 		
 		assertEquals("One or more inputs is invalid\r\n" + USAGE, os.toString());
 	}
@@ -82,7 +82,7 @@ class mainProgramTests {
 		PrintStream ps = new PrintStream(os);
 		System.setOut(ps);
 		
-		Program.main(new String[] { "1", "abc" });
+		PrimeNumberGeneratorExec.main(new String[] { "1", "abc" });
 		
 		assertEquals("One or more inputs is invalid\r\n" + USAGE, os.toString());
 	}
@@ -93,7 +93,7 @@ class mainProgramTests {
 		PrintStream ps = new PrintStream(os);
 		System.setOut(ps);
 		
-		Program.main(new String[] { "abc", "def" });
+		PrimeNumberGeneratorExec.main(new String[] { "abc", "def" });
 		
 		assertEquals("One or more inputs is invalid\r\n" + USAGE, os.toString());
 	}
@@ -104,7 +104,7 @@ class mainProgramTests {
 		PrintStream ps = new PrintStream(os);
 		System.setOut(ps);
 		
-		Program.main(new String[] { "1" });
+		PrimeNumberGeneratorExec.main(new String[] { "1" });
 		
 		assertEquals("Please specify 2 integers\r\n" + USAGE, os.toString());
 	}
@@ -115,7 +115,7 @@ class mainProgramTests {
 		PrintStream ps = new PrintStream(os);
 		System.setOut(ps);
 		
-		Program.main(new String[] { "1", "2", "3" });
+		PrimeNumberGeneratorExec.main(new String[] { "1", "2", "3" });
 		
 		assertEquals("Please specify 2 integers\r\n" + USAGE, os.toString());
 	}

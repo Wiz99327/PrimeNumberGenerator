@@ -6,7 +6,7 @@ import com.png.implementations.PrimeNumberGenerator;
 import com.png.interfaces.*;
 import com.png.util.InputValidation;
 
-public class Program {
+public class PrimeNumberGeneratorExec {
 
 	public static void main(String[] args) {
 		InputValidation validation = new InputValidation();
