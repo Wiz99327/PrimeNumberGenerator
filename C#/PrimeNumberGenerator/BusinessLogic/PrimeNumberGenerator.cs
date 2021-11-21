@@ -25,6 +25,7 @@ namespace PrimeNumberGeneratorExercise.BusinessLogic
             int trueStart = Math.Min(startingValue, endingValue);
             int trueEnd = Math.Max(startingValue, endingValue);
 
+            
             // Return any preprocessed prime numbers here to help us
             // with larger numbers and determining their prime/composite status
             var preProcessedPrimes = PreprocessPrimes(trueEnd);
@@ -111,7 +112,7 @@ namespace PrimeNumberGeneratorExercise.BusinessLogic
                 // number that meets the below condition. If a zero is returned
                 // (none of the prime numbers in our list are evenly divided by the iterator),
                 // this number is prime and we'll add it to our preprocessed list
-                if (primes.FirstOrDefault(x => i % x == 0) == 0)
+                if (!primes.Any(x => i % x == 0))
                 {
                     primes.Add(i);
                 }
